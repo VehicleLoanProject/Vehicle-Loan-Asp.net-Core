@@ -1280,6 +1280,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "VehicleLoan.BusinessModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/VehicleLoan.BusinessModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VehicleLoan.BusinessModels.dll": {}
+        }
       }
     }
   },
@@ -4986,12 +4996,18 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "VehicleLoan.BusinessModels/1.0.0": {
+      "type": "project",
+      "path": "../VehicleLoan.BusinessModels/VehicleLoan.BusinessModels.csproj",
+      "msbuildProject": "../VehicleLoan.BusinessModels/VehicleLoan.BusinessModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
+      "VehicleLoan.BusinessModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5020,7 +5036,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+              "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VehicleLoan.DataAccessLayer\VehicleLoan.DataAccessLayer.csproj" />
+
   </ItemGroup>
 
 </Project>

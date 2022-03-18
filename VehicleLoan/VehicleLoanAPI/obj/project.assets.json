@@ -1256,9 +1256,6 @@
       "VehicleLoan.BusinessModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "VehicleLoan.DataAccessLayer": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/VehicleLoan.BusinessModels.dll": {}
         },
@@ -1270,7 +1267,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
+          "VehicleLoan.BusinessModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/VehicleLoan.DataAccessLayer.dll": {}

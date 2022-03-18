@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace VehicleLoan.DataAccessLayer.Models
 {
-    public partial class VehicleloanDbContext : DbContext
+    public partial class VehicleloanContext : DbContext
     {
-        public VehicleloanDbContext()
+        public VehicleloanContext()
         {
         }
 
-        public VehicleloanDbContext(DbContextOptions<VehicleloanDbContext> options)
+        public VehicleloanContext(DbContextOptions<VehicleloanContext> options)
             : base(options)
         {
         }
