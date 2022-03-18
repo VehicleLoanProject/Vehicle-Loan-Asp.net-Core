@@ -1,0 +1,13 @@
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\bin\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.deps.json
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\bin\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.runtimeconfig.json
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\bin\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.runtimeconfig.dev.json
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\bin\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\bin\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.pdb
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.csproj.AssemblyReference.cache
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.AssemblyInfoInputs.cache
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.AssemblyInfo.cs
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.pdb
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.DataAccessLayer\obj\Debug\netcoreapp3.1\VehicleLoan.DataAccessLayer.genruntimeconfig.cache
