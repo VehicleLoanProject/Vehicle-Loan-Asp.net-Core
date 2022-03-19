@@ -13,6 +13,6 @@ namespace VehicleLoan.BusinessModels
         public decimal? OnroadPrice { get; set; }
         public int CustomerId { get; set; }
 
-        public virtual ApplicantDetailsModel Customer { get; set; }
+        
     }
 }

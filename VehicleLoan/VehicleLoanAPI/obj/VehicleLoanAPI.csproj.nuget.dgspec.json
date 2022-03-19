@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {}
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {}
   },
   "projects": {
-    "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
         "projectName": "VehicleLoan.BusinessModels",
-        "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
-        "packagesPath": "C:\\Users\\Swapnil Bagul\\.nuget\\packages\\",
-        "outputPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Swapnil Bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
         "projectName": "VehicleLoan.DataAccessLayer",
-        "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Swapnil Bagul\\.nuget\\packages\\",
-        "outputPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Swapnil Bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
-                "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
               }
             }
           }
@@ -132,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
         "projectName": "VehicleLoanAPI",
-        "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
-        "packagesPath": "C:\\Users\\Swapnil Bagul\\.nuget\\packages\\",
-        "outputPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Swapnil Bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,11 +160,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
-                "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
               },
-              "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
-                "projectPath": "C:\\LTI_Training\\Project\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj"
               }
             }
           }
@@ -196,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

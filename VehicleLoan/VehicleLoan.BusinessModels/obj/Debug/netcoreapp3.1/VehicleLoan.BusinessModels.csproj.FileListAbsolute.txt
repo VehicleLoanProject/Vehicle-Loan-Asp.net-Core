@@ -11,3 +11,16 @@ C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.Busine
 C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.runtimeconfig.json
 C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.runtimeconfig.dev.json
 C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.genruntimeconfig.cache
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.deps.json
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.runtimeconfig.json
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.runtimeconfig.dev.json
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.dll
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\bin\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.pdb
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.csproj.AssemblyReference.cache
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.GeneratedMSBuildEditorConfig.editorconfig
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.AssemblyInfoInputs.cache
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.AssemblyInfo.cs
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.csproj.CoreCompileInputs.cache
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.dll
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.pdb
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoan.BusinessModels\obj\Debug\netcoreapp3.1\VehicleLoan.BusinessModels.genruntimeconfig.cache

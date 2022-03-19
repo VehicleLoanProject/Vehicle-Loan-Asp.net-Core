@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "64b7208e-a18e-49a5-8c66-3d8ea2b623d2": {
+      "ProjectGuid": "64b7208e-a18e-49a5-8c66-3d8ea2b623d2",
+      "DisplayName": "VehicleLoanAPI",
+      "ColorIndex": 0
+    },
+    "9834f6f8-420c-495e-add3-31b36242475a": {
+      "ProjectGuid": "9834f6f8-420c-495e-add3-31b36242475a",
+      "DisplayName": "VehicleLoan.DataAccessLayer",
+      "ColorIndex": 1
+    },
+    "a316595b-765d-4ce0-9244-fd75603295c0": {
+      "ProjectGuid": "a316595b-765d-4ce0-9244-fd75603295c0",
+      "DisplayName": "VehicleLoan.BusinessModels",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
