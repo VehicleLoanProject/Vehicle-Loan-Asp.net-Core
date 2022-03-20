@@ -14,39 +14,65 @@ namespace VehicleLoanAPI.Controllers
     [ApiController]
     public class LoanSchemeController : ControllerBase
     {
-        // GET: api/<LoanSchemeController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("api/Scheme)")]
+
+        public IActionResult GetLoanSchemes()
         {
-            return new string[] { "value1", "value2" };
+            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
+            var fetchedData = loanSchemeDaoObj.FetchAllLoanSchemes();
+            return this.Ok(fetchedData);
         }
 
-        // GET api/<LoanSchemeController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<LoanSchemeController>
         [HttpPost]
-        public void Post(LoanSchemeModel loanSchemeModel)
+        public IActionResult AddLoanScheme([FromBody] LoanSchemeModel loanScheme)
         {
-            LoanSchemeDaoImpl loanSchemeDaoImpl = new LoanSchemeDaoImpl();
-            bool result = loanSchemeDaoImpl.AddLoanScheme(loanSchemeModel);
-
+            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
+            var result = loanSchemeDaoObj.AddLoanScheme(loanScheme);
+            return this.CreatedAtAction(
+                "AddLoanScheme", new
+                {
+                    StatusCode = 201,
+                    Response = result,
+                    Data = loanScheme
+                }
+                );
         }
-
-        // PUT api/<LoanSchemeController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<LoanSchemeController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult DeleteScheme(int id)
         {
+            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
+            var result = loanSchemeDaoObj.DeleteLoanScheme(id);
+            return this.CreatedAtAction(
+                "DeletedLoanScheme",
+                new
+                {
+                    StatusCode = 201,
+                    Response = result,
+                    Data = id
+                }
+                );
         }
+        public IActionResult UpdateScheme(int id, [FromBody] LoanSchemeModel loanSchemeModel)
+        {
+            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
+            var result = loanSchemeDaoObj.UpdateLoanSchemeById(id, loanSchemeModel);
+            return this.CreatedAtAction(
+                "UpdateLoanScheme",
+                new
+                {
+                    StatusCode = 201,
+                    Response = result,
+                    Data = loanSchemeModel
+                }
+                );
+        }
+
     }
 }
+
+
+
+    
+

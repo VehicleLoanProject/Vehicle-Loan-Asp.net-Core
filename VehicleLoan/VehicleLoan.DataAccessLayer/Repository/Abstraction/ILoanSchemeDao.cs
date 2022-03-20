@@ -5,12 +5,13 @@ using VehicleLoan.BusinessModels;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
-    interface ILoanSchemeDao
+    public interface ILoanSchemeDao
     {
         List<LoanSchemeModel> FetchAllLoanSchemes();
 
-        int updateLoanScheme(LoanSchemeModel loanSchemeModel);
+        int UpdateLoanSchemeById(int schemeid, LoanSchemeModel loanSchemeModel);
 
-        int AddLoanScheme(LoanSchemeModel loanSchemeModel);
+        bool AddLoanScheme(LoanSchemeModel loanSchemeModel);
+        int DeleteLoanScheme(int id);
     }
 }
