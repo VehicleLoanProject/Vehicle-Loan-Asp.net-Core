@@ -10,8 +10,8 @@ namespace VehicleLoan.BusinessModels
         public decimal LoanAmount { get; set; }
         public int LoanTenure { get; set; }
         public int InterestRate { get; set; }
-        public int CustomerId { get; set; }
-        public int StatusId { get; set; }
+        public int? CustomerId { get; set; }
+        public int? StatusId { get; set; }
 
         public virtual ApplicantDetailsModel Customer { get; set; }
         public virtual ApplicationStatusModel Status { get; set; }

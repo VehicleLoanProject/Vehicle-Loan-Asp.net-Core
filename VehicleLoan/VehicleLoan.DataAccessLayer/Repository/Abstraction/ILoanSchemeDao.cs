@@ -11,7 +11,7 @@ namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 
         int UpdateLoanSchemeById(int schemeid, LoanSchemeModel loanSchemeModel);
 
-        bool AddLoanScheme(LoanSchemeModel loanSchemeModel);
+        int AddLoanScheme(LoanSchemeModel loanSchemeModel);
         int DeleteLoanScheme(int id);
     }
 }

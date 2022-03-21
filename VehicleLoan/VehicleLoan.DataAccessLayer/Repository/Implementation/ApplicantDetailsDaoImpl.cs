@@ -90,6 +90,28 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             }
             return applicantDetails;
         }
-      
+
+        public int DeleteApplicantDetails(int customerid)
+        {
+
+            try
+            {
+                using (var db = new VehicleloanContext())
+                {
+
+                    DbSet<ApplicantDetails> allApplicants = db.ApplicantDetails;
+                    ApplicantDetails loanScheme = allApplicants.Where(l => l.CustomerId == customerid).First();
+                    allApplicants.Remove(loanScheme);
+                    int rowAffected = db.SaveChanges();
+                    return rowAffected;
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

@@ -10,7 +10,7 @@ namespace VehicleLoan.DataAccessLayer.Models
         public byte[] Pancard { get; set; }
         public byte[] Photo { get; set; }
         public byte[] Salaryslip { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
 
         public virtual ApplicantDetails Customer { get; set; }
     }

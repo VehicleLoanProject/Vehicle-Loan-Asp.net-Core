@@ -13,7 +13,9 @@ namespace VehicleLoan.BusinessModels
         public decimal Emi { get; set; }
         public decimal ProcessingFee { get; set; }
         public string AccountType { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
+        public string SchemeDescription { get; set; }
+
 
         public virtual ApplicantDetailsModel Customer { get; set; }
     }

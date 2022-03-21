@@ -87,3 +87,4 @@ G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\ob
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\obj\Debug\netcoreapp3.1\VehicleLoanAPI.dll
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\obj\Debug\netcoreapp3.1\VehicleLoanAPI.pdb
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\obj\Debug\netcoreapp3.1\VehicleLoanAPI.genruntimeconfig.cache
+G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

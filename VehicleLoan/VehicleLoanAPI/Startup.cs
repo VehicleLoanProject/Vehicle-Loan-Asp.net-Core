@@ -9,14 +9,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-<<<<<<< Updated upstream
-using VehicleLoan.DataAccessLayer.Repository.Implementation;
-using VehicleLoan.DataAccessLayer.Repository.Abstraction;
-=======
 using VehicleLoan.DataAccessLayer.Repository.Abstraction;
 using VehicleLoan.DataAccessLayer.Repository.Implementation;
 
->>>>>>> Stashed changes
 
 
 namespace VehicleLoanAPI
@@ -33,11 +28,10 @@ namespace VehicleLoanAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-<<<<<<< Updated upstream
             services.AddSingleton<IVehicleDao, VehicleDaoImpl>();
-=======
             services.AddSingleton<IApplicantDetailsDao, ApplicantDetailsDaoImpl>();
->>>>>>> Stashed changes
+            services.AddSingleton<ILoanSchemeDao,LoanSchemeDaoImpl>();
+            services.AddSingleton<IUserRegistrationDao,IUserRegistrationDao>();
             services.AddControllers();
         }
 

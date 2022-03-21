@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {}
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {}
   },
   "projects": {
-    "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
         "projectName": "VehicleLoan.BusinessModels",
-        "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
-        "packagesPath": "C:\\Users\\ideal\\.nuget\\packages\\",
-        "outputPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ideal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,17 +66,17 @@
         }
       }
     },
-    "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
         "projectName": "VehicleLoan.DataAccessLayer",
-        "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\ideal\\.nuget\\packages\\",
-        "outputPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ideal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
-                "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
               }
             }
           }
@@ -106,6 +106,12 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -136,17 +142,17 @@
         }
       }
     },
-    "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {
+    "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
+        "projectUniqueName": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
         "projectName": "VehicleLoanAPI",
-        "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
-        "packagesPath": "C:\\Users\\ideal\\.nuget\\packages\\",
-        "outputPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\obj\\",
+        "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\VehicleLoanAPI.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoanAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ideal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,11 +166,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
-                "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.BusinessModels\\VehicleLoan.BusinessModels.csproj"
               },
-              "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
-                "projectPath": "E:\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj"
+              "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj": {
+                "projectPath": "G:\\project_github_folder\\Vehicle-Loan-Asp.net-Core\\VehicleLoan\\VehicleLoan.DataAccessLayer\\VehicleLoan.DataAccessLayer.csproj"
               }
             }
           }
@@ -178,6 +184,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -188,12 +202,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.22, 3.1.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

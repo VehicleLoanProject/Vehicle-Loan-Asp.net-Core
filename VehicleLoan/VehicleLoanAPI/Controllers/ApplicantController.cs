@@ -21,23 +21,6 @@ namespace VehicleLoanAPI.Controllers
             _applicantDetailsDao = applicantDetailsDao;
         }
 
-
-        // GET: api/<ApplicantController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-
-        }
-
-        // GET api/<ApplicantController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ApplicantController>
         [HttpPost]
         [Route("AddApplicant")]
         public IActionResult AddApplicantDetails(ApplicantDetailsModel applicantDetailsModel)
@@ -49,22 +32,30 @@ namespace VehicleLoanAPI.Controllers
             {
                 Status = 201,
                 Response = result,
-                Data = applicantDetailsModel
+                Data = applicantDetailsModel.CustomerId
             }
             );
         }
 
-        // PUT api/<ApplicantController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpDelete]
+        [Route("{customerid}")]
+        public IActionResult Delete(int customerid)
         {
+
+
+            var result = _applicantDetailsDao.DeleteApplicantDetails(customerid);
+            return this.CreatedAtAction(
+                "Delete",
+                new
+                {
+                    StatusCode = 201,
+                    Response = result,
+                    Data = customerid
+                }
+                );
+
         }
 
-        // DELETE api/<ApplicantController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
         [HttpGet]
         [Route("applicantDetails")]
         public IActionResult ApplicantDetails()

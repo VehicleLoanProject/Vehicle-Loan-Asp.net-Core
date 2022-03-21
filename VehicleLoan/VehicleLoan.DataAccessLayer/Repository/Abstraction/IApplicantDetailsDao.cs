@@ -10,5 +10,6 @@ namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
         List<ApplicantDetailsModel> FetchApplicantDetails();
 
         bool AddApplicantDetails(ApplicantDetailsModel loanSchemeModel);
+        int DeleteApplicantDetails(int customerid);
     }
 }

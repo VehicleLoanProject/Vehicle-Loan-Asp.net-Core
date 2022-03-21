@@ -5,15 +5,14 @@ using VehicleLoan.BusinessModels;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
-    interface IUserRegistrationDao
+    public interface IUserRegistrationDao
     {
-        interface IUserRegistrationDao
+        public interface IUserRegistrationDao
         {
             int AddRecord(UserRegistrationModel userModel);
-            int UpdateRecord(string password);
-            string SearchUserId(string userid); // for forgot password, search user id based on that, update password.
-            int deleteRecord(int id);
-            List<UserRegistrationModel> GetUserRegistrationDetails();
+            int UpdateRecord(UserRegistrationModel userModel);
+            int deleteRecord(string userid);
+            string GetLoginDetails(string userid);
 
 
         }

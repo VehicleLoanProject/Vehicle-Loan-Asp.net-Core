@@ -12,7 +12,7 @@ namespace VehicleLoan.DataAccessLayer.Models
 
         public string UserId { get; set; }
         public string Password { get; set; }
-        public int RoleId { get; set; }
+        public int? RoleId { get; set; }
 
         public virtual RoleType Role { get; set; }
         public virtual ICollection<ApplicantDetails> ApplicantDetails { get; set; }

@@ -6,6 +6,7 @@ using VehicleLoan.BusinessModels;
 using VehicleLoan.DataAccessLayer.Models;
 using System.Linq;
 using VehicleLoan.DataAccessLayer.Repository.Abstraction;
+using Microsoft.Data.SqlClient;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 {
@@ -15,9 +16,37 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
         {
 
         }
-        public bool AddLoanScheme(LoanSchemeModel businessLoanSchemeObj)
+        public int AddLoanScheme(LoanSchemeModel businessLoanSchemeObj)
         {
-            return true;
+            LoanScheme loanSchemeObj = null;
+            try
+            {
+                using (var db = new VehicleloanContext())
+                {
+                    DbSet<LoanScheme> vehicleList = db.LoanScheme;
+
+                    loanSchemeObj = new LoanScheme()
+                    {
+                        SchemeName = businessLoanSchemeObj.SchemeName,
+                        MaxLoanAmount = businessLoanSchemeObj.MaxLoanAmount,
+                        InterestRate = businessLoanSchemeObj.InterestRate,
+                        Emi = businessLoanSchemeObj.Emi,
+                        ProcessingFee = businessLoanSchemeObj.ProcessingFee,
+                        AccountType = businessLoanSchemeObj.AccountType,
+                        CustomerId = businessLoanSchemeObj.CustomerId,
+                        SchemeDescription = businessLoanSchemeObj.SchemeDescription
+                    };
+                    vehicleList.Add(loanSchemeObj);
+                    int rawAffected = db.SaveChanges();
+                    return rawAffected;
+
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
         }
         public List<LoanSchemeModel> FetchAllLoanSchemes()
         {

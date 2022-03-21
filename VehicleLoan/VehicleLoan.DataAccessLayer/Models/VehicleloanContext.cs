@@ -75,7 +75,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.MiddleName)
-                    .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
@@ -90,7 +89,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserId)
-                    .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
@@ -99,7 +97,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.ApplicantDetails)
                     .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_applicant_details");
             });
 
@@ -142,7 +139,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.IdentityDocuments)
                     .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_identity_documents");
             });
 
@@ -156,13 +152,11 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.LoanDetails)
                     .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_loan_details_custid");
 
                 entity.HasOne(d => d.Status)
                     .WithMany(p => p.LoanDetails)
                     .HasForeignKey(d => d.StatusId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_loan_details_status_id");
             });
 
@@ -182,6 +176,8 @@ namespace VehicleLoan.DataAccessLayer.Models
 
                 entity.Property(e => e.ProcessingFee).HasColumnType("decimal(18, 2)");
 
+                entity.Property(e => e.SchemeDescription).IsUnicode(false);
+
                 entity.Property(e => e.SchemeName)
                     .IsRequired()
                     .HasMaxLength(50)
@@ -190,7 +186,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.LoanScheme)
                     .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_loan_scheme");
             });
 
@@ -222,7 +217,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.UserRegistration)
                     .HasForeignKey(d => d.RoleId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_user_registration");
             });
 
@@ -249,7 +243,6 @@ namespace VehicleLoan.DataAccessLayer.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Vehicle)
                     .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_vehicle");
             });
 

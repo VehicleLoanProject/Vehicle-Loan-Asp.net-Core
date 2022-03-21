@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "VehicleLoan.DataAccessLayer/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
           "VehicleLoan.BusinessModels": "1.0.0"

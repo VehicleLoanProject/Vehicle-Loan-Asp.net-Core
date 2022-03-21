@@ -12,7 +12,8 @@ namespace VehicleLoan.DataAccessLayer.Models
         public decimal Emi { get; set; }
         public decimal ProcessingFee { get; set; }
         public string AccountType { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
+        public string SchemeDescription { get; set; }
 
         public virtual ApplicantDetails Customer { get; set; }
     }

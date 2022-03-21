@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VehicleLoan.BusinessModels;
+using VehicleLoan.DataAccessLayer.Repository.Abstraction;
 using VehicleLoan.DataAccessLayer.Repository.Implementation;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,13 +15,19 @@ namespace VehicleLoanAPI.Controllers
     [ApiController]
     public class LoanSchemeController : ControllerBase
     {
+        private ILoanSchemeDao _loanScheneDao = null;
+
+        public LoanSchemeController(ILoanSchemeDao loanScheneDao)
+        {
+            this._loanScheneDao = loanScheneDao;
+        }
+
         [HttpGet]
         [Route("api/Scheme)")]
 
         public IActionResult GetLoanSchemes()
         {
-            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
-            var fetchedData = loanSchemeDaoObj.FetchAllLoanSchemes();
+            var fetchedData = _loanScheneDao.FetchAllLoanSchemes();
             return this.Ok(fetchedData);
         }
 
@@ -29,8 +36,8 @@ namespace VehicleLoanAPI.Controllers
         public IActionResult AddLoanScheme([FromBody] LoanSchemeModel loanScheme)
         {
 
-            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
-            var result = loanSchemeDaoObj.AddLoanScheme(loanScheme);
+            
+            var result = _loanScheneDao.AddLoanScheme(loanScheme);
             return this.CreatedAtAction(
                 "AddLoanScheme", new
                 {
@@ -42,11 +49,12 @@ namespace VehicleLoanAPI.Controllers
            
 
         }
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        [Route("{id}")]
         public IActionResult DeleteScheme(int id)
         {
-            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
-            var result = loanSchemeDaoObj.DeleteLoanScheme(id);
+            
+            var result = _loanScheneDao.DeleteLoanScheme(id);
             return this.CreatedAtAction(
                 "DeletedLoanScheme",
                 new
@@ -57,10 +65,12 @@ namespace VehicleLoanAPI.Controllers
                 }
                 );
         }
+
+        [HttpPut]
         public IActionResult UpdateScheme(int id, [FromBody] LoanSchemeModel loanSchemeModel)
         {
-            LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
-            var result = loanSchemeDaoObj.UpdateLoanSchemeById(id, loanSchemeModel);
+           
+            var result = _loanScheneDao.UpdateLoanSchemeById(id, loanSchemeModel);
             return this.CreatedAtAction(
                 "UpdateLoanScheme",
                 new

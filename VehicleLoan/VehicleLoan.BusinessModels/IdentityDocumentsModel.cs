@@ -11,7 +11,7 @@ namespace VehicleLoan.BusinessModels
         public byte[] Pancard { get; set; }
         public byte[] Photo { get; set; }
         public byte[] Salaryslip { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
 
         public virtual ApplicantDetailsModel Customer { get; set; }
     }

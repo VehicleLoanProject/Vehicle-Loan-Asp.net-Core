@@ -21,7 +21,7 @@ namespace VehicleLoanAPI.Controllers
         {
             this._vehicleDao = vehicleDao;
         }
-        // GET: api/<VehicleController>
+        
         [HttpGet]
         public IActionResult GetAllVehicleDetails()
         {
@@ -38,7 +38,8 @@ namespace VehicleLoanAPI.Controllers
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
+        [Route("{id}")]
         public IActionResult GetVehicleDetailsById(int id)
         {
             try
@@ -57,7 +58,7 @@ namespace VehicleLoanAPI.Controllers
             }
         }
 
-        // POST api/<VehicleController>
+        
         [HttpPost]
         public IActionResult AddVehicleRecord([FromBody] VehicleModel vehicleObj)
         {
@@ -79,7 +80,8 @@ namespace VehicleLoanAPI.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        [Route("{id}")]
         public IActionResult DeleteRecord(int id)
         {
             try
