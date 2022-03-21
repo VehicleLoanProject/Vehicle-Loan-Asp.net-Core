@@ -6,14 +6,6 @@ namespace VehicleLoan.BusinessModels
 {
    public class ApplicantDetailsModel
     {
-        public ApplicantDetailsModel()
-        {
-            IdentityDocuments = new HashSet<IdentityDocumentsModel>();
-            LoanDetails = new HashSet<LoanDetailsModel>();
-            LoanScheme = new HashSet<LoanSchemeModel>();
-            Vehicle = new HashSet<VehicleModel>();
-        }
-
         public int CustomerId { get; set; }
         public DateTime AppliedOn { get; set; }
         public string FirstName { get; set; }
@@ -31,11 +23,5 @@ namespace VehicleLoan.BusinessModels
         public decimal YearlySalary { get; set; }
         public decimal? ExistingEmi { get; set; }
         public string UserId { get; set; }
-
-        public virtual UserRegistrationModel User { get; set; }
-        public virtual ICollection<IdentityDocumentsModel> IdentityDocuments { get; set; }
-        public virtual ICollection<LoanDetailsModel> LoanDetails { get; set; }
-        public virtual ICollection<LoanSchemeModel> LoanScheme { get; set; }
-        public virtual ICollection<VehicleModel> Vehicle { get; set; }
     }
 }

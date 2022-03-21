@@ -5,10 +5,10 @@ using VehicleLoan.BusinessModels;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
-    interface IApplicantDetailsDao
+    public interface IApplicantDetailsDao
     {
         List<ApplicantDetailsModel> FetchApplicantDetails();
 
-        int AddApplicantDetails(ApplicantDetailsModel loanSchemeModel);
+        bool AddApplicantDetails(ApplicantDetailsModel loanSchemeModel);
     }
 }

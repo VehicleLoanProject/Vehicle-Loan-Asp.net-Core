@@ -17,33 +17,9 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
         }
         public bool AddLoanScheme(LoanSchemeModel businessLoanSchemeObj)
         {
-            int result = 0;
-            try
-            {
-                using (var db = new VehicleloanContext())
-                {
-                    DbSet<LoanScheme> allLoanSchemes = db.LoanScheme;
-                    LoanScheme entityModelObject = new LoanScheme
-                    {
-                        SchemeId = businessLoanSchemeObj.SchemeId,
-                        SchemeName = businessLoanSchemeObj.SchemeName,
-                        MaxLoanAmount = businessLoanSchemeObj.MaxLoanAmount,
-                        InterestRate = businessLoanSchemeObj.InterestRate,
-                        Emi = businessLoanSchemeObj.Emi,
-                        ProcessingFee = businessLoanSchemeObj.ProcessingFee,
-                        AccountType = businessLoanSchemeObj.AccountType,
-                        CustomerId = businessLoanSchemeObj.CustomerId,
-                    };
-                    allLoanSchemes.Add(entityModelObject);
-                    result = db.SaveChanges();
-                }
-                return result > 0;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return true;
         }
+<<<<<<< Updated upstream
         public List<LoanSchemeModel> FetchAllLoanSchemes()
         {
             List<LoanSchemeModel> businessLoanSchemes = null;
@@ -151,5 +127,8 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             // }
 
         }
+=======
+            
+>>>>>>> Stashed changes
     }
 }

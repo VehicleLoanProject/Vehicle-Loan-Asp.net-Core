@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/LoanScheme",
+      "launchUrl": "api/Applicant/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "VehicleLoanAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Vehicle",
+      "launchUrl": "api/Applicant/",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
