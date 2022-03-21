@@ -19,7 +19,6 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
         {
             return true;
         }
-<<<<<<< Updated upstream
         public List<LoanSchemeModel> FetchAllLoanSchemes()
         {
             List<LoanSchemeModel> businessLoanSchemes = null;
@@ -127,8 +126,5 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             // }
 
         }
-=======
-            
->>>>>>> Stashed changes
     }
 }
