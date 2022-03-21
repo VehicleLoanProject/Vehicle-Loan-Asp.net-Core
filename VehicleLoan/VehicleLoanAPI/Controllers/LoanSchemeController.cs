@@ -28,7 +28,7 @@ namespace VehicleLoanAPI.Controllers
         [HttpPost]
         public IActionResult AddLoanScheme([FromBody] LoanSchemeModel loanScheme)
         {
-<<<<<<< Updated upstream
+
             LoanSchemeDaoImpl loanSchemeDaoObj = new LoanSchemeDaoImpl();
             var result = loanSchemeDaoObj.AddLoanScheme(loanScheme);
             return this.CreatedAtAction(
@@ -39,10 +39,8 @@ namespace VehicleLoanAPI.Controllers
                     Data = loanScheme
                 }
                 );
-=======
            
 
->>>>>>> Stashed changes
         }
         [HttpDelete("{id}")]
         public IActionResult DeleteScheme(int id)
