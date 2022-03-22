@@ -31,7 +31,7 @@ namespace VehicleLoanAPI
             services.AddSingleton<IVehicleDao, VehicleDaoImpl>();
             services.AddSingleton<IApplicantDetailsDao, ApplicantDetailsDaoImpl>();
             services.AddSingleton<ILoanSchemeDao,LoanSchemeDaoImpl>();
-            services.AddSingleton<IUserRegistrationDao,IUserRegistrationDao>();
+            services.AddSingleton<IUserRegistrationDao, UserRegistrationDaoImpl>();
             services.AddControllers();
         }
 

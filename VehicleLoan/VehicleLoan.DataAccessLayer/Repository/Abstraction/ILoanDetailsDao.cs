@@ -7,7 +7,7 @@ namespace VehicleLoanDataAccessLayer.Repository.Abstraction
 {
     public interface ILoanDetailsDao
     {
-        int AddLoanDetails(LoanDetails loanDetails);
+        int AddLoanDetails(LoanDetailsModel loanDetails);
 
         List<LoanDetailsModel> GetAllLoanDetails(); 
         

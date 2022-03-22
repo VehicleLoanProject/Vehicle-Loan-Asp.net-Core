@@ -87,20 +87,4 @@ namespace VehicleLoanAPI.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("{userid}")]
-        public IActionResult GetLoginDetails(string userid)
-        {
-            try
-            {
-                string password = _userDao.GetLoginDetails(userid);
-                return this.Ok(password);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-
-        }
-
  }

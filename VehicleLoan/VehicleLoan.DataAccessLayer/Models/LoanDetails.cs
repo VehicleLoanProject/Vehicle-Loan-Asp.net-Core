@@ -12,7 +12,7 @@ namespace VehicleLoan.DataAccessLayer.Models
         public int CustomerId { get; set; }
         public int StatusId { get; set; }
 
-        public virtual ApplicantDetail Customer { get; set; }
+        public virtual ApplicantDetails Customer { get; set; }
         public virtual ApplicationStatus Status { get; set; }
     }
 }

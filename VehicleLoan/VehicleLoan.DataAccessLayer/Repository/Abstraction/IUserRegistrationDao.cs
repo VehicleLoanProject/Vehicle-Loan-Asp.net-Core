@@ -6,15 +6,12 @@ using VehicleLoan.BusinessModels;
 namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
     public interface IUserRegistrationDao
-    {
-        public interface IUserRegistrationDao
         {
             int AddRecord(UserRegistrationModel userModel);
             int UpdateRecord(UserRegistrationModel userModel);
-            int deleteRecord(string userid);
+            int DeleteRecord(string userid);
             string GetLoginDetails(string userid);
 
 
         }
-    }
 }

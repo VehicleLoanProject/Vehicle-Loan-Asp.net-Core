@@ -11,7 +11,7 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
 {
     public class LoanDetailsDaoImpl : ILoanDetailsDao
     {
-        public int AddLoanDetails(LoanDetails loanDetails)
+        public int AddLoanDetails(LoanDetailsModel loanDetails)
         {
             LoanDetails loanDetailsobj = null;
             try
@@ -28,7 +28,7 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
 
 
                     };
-                    loanDetailsobj.Add(loanDetailsobj);
+                    loanDetailsList.Add(loanDetailsobj);
                     int rowAffected = db.SaveChanges();
                     return rowAffected;
 

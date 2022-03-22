@@ -5,10 +5,11 @@ using VehicleLoan.BusinessModels;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
-    interface IIdentityDocumentDao
+    public interface IIdentityDocumentDao
     {
         int AddIdentityDocument(IdentityDocumentsModel identityDocumentsModel);
 
-        List<IdentityDocumentsModel> FetchVehicleDetails(int id);
+        List<IdentityDocumentsModel> GetAllIdentityDocuement();
+        int DeleteIdentityDocuements(int id);
     }
 }

@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using VehicleLoan.DataAccessLayer.Repository.Abstraction;
-using System;
 using VehicleLoan.DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 using System.Linq;
+using VehicleLoan.BusinessModels;
 
 namespace VehicleLoanDataAccessLayer.Repository.Implimantation
 {
-    class IdentityDocumentDaoImpl : IIdentityDocuementDao
+    class IdentityDocumentDaoImpl : IIdentityDocumentDao
     {
-        public int UploadIdentityDocument(IdentityDocuementModel identityDocumentsModel)
+        public int AddIdentityDocument(IdentityDocumentsModel identityDocumentsModel)
         {
-            IdentityDocuement identityDocuementobj = null;
+            IdentityDocuments identityDocuementobj = null;
             try 
             {
                 using (var db = new VehicleloanContext())
                 {
-                    DbSet<IdentityDocuement> identityDocuementList = db.IdentityDocuments;
-                    identityDocuementobj = new IdentityDocuement()
+                    DbSet<IdentityDocuments> identityDocumentList = db.IdentityDocuments;
+                    identityDocuementobj = new IdentityDocuments()
                     {
                         Adharcard = identityDocumentsModel.Adharcard,
                         Pancard = identityDocumentsModel.Pancard,
@@ -29,7 +28,7 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
 
 
                     };
-                    identityDocuementobj.Upload(identityDocuementobj);
+                    identityDocumentList.Add(identityDocuementobj);
                     int rowAffected = db.SaveChanges();
                     return rowAffected;
 
@@ -52,8 +51,8 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
             {
                 using (var db = new VehicleloanContext())
                 {
-                    DbSet<IdentityDocuement> identityDocuementList = db.IdentityDocuments;
-                    IdentityDocuement identityDocuement = identityDocuementList.Where(i => i.IdentityId == id).First();
+                    DbSet<IdentityDocuments> identityDocuementList = db.IdentityDocuments;
+                    IdentityDocuments identityDocuement = identityDocuementList.Where(i => i.IdentityId == id).First();
                     identityDocuementList.Remove(identityDocuement);
                     int rowAffected = db.SaveChanges();
                     return rowAffected;
@@ -70,22 +69,22 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
             }
         }
 
-        public List<IdentityDocuementModel> GetAllIdentityDocuement()
+        public List<IdentityDocumentsModel> GetAllIdentityDocuement()
         {
-            List<IdentityDocuementModel> identityDocuementList = null;
+            List<IdentityDocumentsModel> identityDocuementList = null;
             try
             {
                 using (var db = new VehicleloanContext())
                 {
-                    DbSet<IdentityDocuement> allIdentityDocuements = db.IdentityDocuments;
+                    DbSet<IdentityDocuments> allIdentityDocuements = db.IdentityDocuments;
                     identityDocuementList= allIdentityDocuements.Select(
-                        Set => new IdentityDocuementModel 
+                        Set => new IdentityDocumentsModel
                         {
                             Adharcard = Set.Adharcard,
                             Pancard= Set.Pancard,
-                            Photo= Set.Photo,
+                            Photo = Set.Photo,
                             Salaryslip= Set.Salaryslip,
-                        }).ToList<IdentityDocuementModel>();
+                        }).ToList<IdentityDocumentsModel>();
                     db.SaveChanges();
                     return identityDocuementList;
                 }

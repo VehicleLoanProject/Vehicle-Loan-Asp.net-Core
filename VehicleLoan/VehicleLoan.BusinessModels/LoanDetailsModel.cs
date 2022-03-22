@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using VehicleLoan.BusinessModels;
 
 namespace VehicleLoan.DataAccessLayer.Models
 {
