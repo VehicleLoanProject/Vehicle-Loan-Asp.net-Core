@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\VehicleLoan",
+    "\\VehicleLoan\\VehicleLoan.BusinessModels",
+    "\\VehicleLoan\\VehicleLoan.DataAccessLayer",
+    "\\VehicleLoan\\VehicleLoanAPI",
+    "\\VehicleLoan\\VehicleLoanAPI\\Controllers"
+  ],
+  "PreviewInSolutionExplorer": false
+}

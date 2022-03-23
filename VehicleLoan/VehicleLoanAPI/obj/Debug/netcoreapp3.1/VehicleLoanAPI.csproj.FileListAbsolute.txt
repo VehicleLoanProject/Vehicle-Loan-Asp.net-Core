@@ -88,3 +88,12 @@ G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\ob
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\obj\Debug\netcoreapp3.1\VehicleLoanAPI.pdb
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\obj\Debug\netcoreapp3.1\VehicleLoanAPI.genruntimeconfig.cache
 G:\project_github_folder\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\LTI_Training\Project\Vehicle-Loan-Asp.net-Core\VehicleLoan\VehicleLoanAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
