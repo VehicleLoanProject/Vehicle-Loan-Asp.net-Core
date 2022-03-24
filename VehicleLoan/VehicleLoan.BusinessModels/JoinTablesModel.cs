@@ -1,20 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VehicleLoan.DataAccessLayer.Models;
 
 namespace VehicleLoan.BusinessModels
 {
-   public class ApplicantDetailsModel
+    public class JoinTablesModel
     {
-        public ApplicantDetailsModel()
-        {
-            IdentityDocuments = new HashSet<IdentityDocumentsModel>();
-            LoanDetails = new HashSet<LoanDetailsModel>();
-            LoanScheme = new HashSet<LoanSchemeModel>();
-            Vehicle = new HashSet<VehicleModel>();
-        }
-
         public int CustomerId { get; set; }
         public DateTime AppliedOn { get; set; }
         public string FirstName { get; set; }
@@ -31,12 +22,14 @@ namespace VehicleLoan.BusinessModels
         public string TypeOfEmployement { get; set; }
         public decimal YearlySalary { get; set; }
         public decimal? ExistingEmi { get; set; }
-        public string UserId { get; set; }
 
-        public virtual UserRegistrationModel User { get; set; }
-        public virtual ICollection<IdentityDocumentsModel> IdentityDocuments { get; set; }
-        public virtual ICollection<LoanDetailsModel> LoanDetails { get; set; }
-        public virtual ICollection<LoanSchemeModel> LoanScheme { get; set; }
-        public virtual ICollection<VehicleModel> Vehicle { get; set; }
+        public decimal LoanAmount { get; set; }
+        public int LoanTenure { get; set; }
+        public int InterestRate { get; set; }
+
+        public string CarMake { get; set; }
+        public string CarModel { get; set; }
+        public decimal? ExshowroomPrice { get; set; }
+        public decimal? OnroadPrice { get; set; }
     }
 }

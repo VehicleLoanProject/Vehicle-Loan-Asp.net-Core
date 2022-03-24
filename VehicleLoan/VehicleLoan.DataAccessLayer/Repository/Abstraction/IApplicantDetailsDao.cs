@@ -8,7 +8,8 @@ namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
     public interface IApplicantDetailsDao
     {
         List<ApplicantDetailsModel> FetchApplicantDetails();
-
+        List<ApplicantDetailsModel> FetchRejectedDetails();
+        List<ApplicantDetailsModel> FetchClientDetails();
         bool AddApplicantDetails(ApplicantDetailsModel loanSchemeModel);
         int DeleteApplicantDetails(int customerid);
     }

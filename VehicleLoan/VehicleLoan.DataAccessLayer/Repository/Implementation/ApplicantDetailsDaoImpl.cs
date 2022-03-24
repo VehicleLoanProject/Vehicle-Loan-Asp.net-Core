@@ -50,6 +50,120 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             }
         }
 
+        public List<ApplicantDetailsModel> FetchClientDetails()
+        {
+            List<ApplicantDetailsModel> applicantDetails = new List<ApplicantDetailsModel>();
+            try
+            {
+
+                using (var db = new VehicleloanContext())
+                {
+                    //from loan details,status == approved.
+                    DbSet<LoanDetails> allLoanDetails = db.LoanDetails;
+
+                    IQueryable<LoanDetails> approvedRecords = allLoanDetails.Where(a => a.StatusId == 2);
+
+                    DbSet<ApplicantDetails> applicantEntity = db.ApplicantDetails;
+
+                    IEnumerable<ApplicantDetails> query = from i in approvedRecords
+                                                          join j in applicantEntity
+                                                          on i.CustomerId equals j.CustomerId
+                                                          select j;
+                    IEnumerable<ApplicantDetailsModel> querTwo = query.Select(applicantDetail =>
+                    new ApplicantDetailsModel
+                    {
+
+                        CustomerId = applicantDetail.CustomerId,
+                        AppliedOn = applicantDetail.AppliedOn,
+                        FirstName = applicantDetail.FirstName,
+                        MiddleName = applicantDetail.MiddleName,
+                        LastName = applicantDetail.LastName,
+                        Age = applicantDetail.Age,
+                        Gender = applicantDetail.Gender,
+                        ContactNo = applicantDetail.ContactNo,
+                        EmailId = applicantDetail.EmailId,
+                        Address = applicantDetail.Address,
+                        State = applicantDetail.State,
+                        City = applicantDetail.City,
+                        Pincode = applicantDetail.Pincode,
+                        TypeOfEmployement = applicantDetail.TypeOfEmployement,
+                        YearlySalary = applicantDetail.YearlySalary,
+                        ExistingEmi = applicantDetail.ExistingEmi,
+                        UserId = applicantDetail.UserId
+                    });
+                    foreach (ApplicantDetailsModel item in querTwo)
+                    {
+                        applicantDetails.Add(item);
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return applicantDetails;
+        }
+        public List<ApplicantDetailsModel> FetchRejectedDetails()
+        {
+            List<ApplicantDetailsModel> applicantDetails = new List<ApplicantDetailsModel>();
+            try
+            {
+
+
+                using (var db = new VehicleloanContext())
+                {
+                    //from loan details,status == approved.
+                    DbSet<LoanDetails> allLoanDetails = db.LoanDetails;
+
+                    IQueryable<LoanDetails> approvedRecords = allLoanDetails.Where(a => a.StatusId == 3);
+
+                    DbSet<ApplicantDetails> applicantEntity = db.ApplicantDetails;
+
+                    IEnumerable<ApplicantDetails> query = from i in approvedRecords
+                                                          join j in applicantEntity
+                                                          on i.CustomerId equals j.CustomerId
+                                                          select j;
+                    IEnumerable<ApplicantDetailsModel> querTwo = query.Select(applicantDetail =>
+                     new ApplicantDetailsModel
+                     {
+
+                         CustomerId = applicantDetail.CustomerId,
+                         AppliedOn = applicantDetail.AppliedOn,
+                         FirstName = applicantDetail.FirstName,
+                         MiddleName = applicantDetail.MiddleName,
+                         LastName = applicantDetail.LastName,
+                         Age = applicantDetail.Age,
+                         Gender = applicantDetail.Gender,
+                         ContactNo = applicantDetail.ContactNo,
+                         EmailId = applicantDetail.EmailId,
+                         Address = applicantDetail.Address,
+                         State = applicantDetail.State,
+                         City = applicantDetail.City,
+                         Pincode = applicantDetail.Pincode,
+                         TypeOfEmployement = applicantDetail.TypeOfEmployement,
+                         YearlySalary = applicantDetail.YearlySalary,
+                         ExistingEmi = applicantDetail.ExistingEmi,
+                         UserId = applicantDetail.UserId
+                     });
+                    foreach (ApplicantDetailsModel item in querTwo)
+                    {
+                        applicantDetails.Add(item);
+                    }
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return applicantDetails;
+        }
+
+
         public List<ApplicantDetailsModel> FetchApplicantDetails()
         {
             List<ApplicantDetailsModel> applicantDetails = null;
