@@ -148,6 +148,10 @@ namespace VehicleLoan.DataAccessLayer.Models
                     .HasName("pk_loan_details");
 
                 entity.Property(e => e.LoanAmount).HasColumnType("decimal(18, 2)");
+                entity.Property(e => e.LoanTenure)
+                .HasColumnType("int(18, 2)"); 
+                entity.Property(e => e.InterestRate)
+                .HasDefaultValue(7).HasColumnType("int(18, 2)");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.LoanDetails)
