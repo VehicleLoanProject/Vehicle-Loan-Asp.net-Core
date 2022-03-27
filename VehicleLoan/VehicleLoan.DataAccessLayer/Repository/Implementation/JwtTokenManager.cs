@@ -34,7 +34,7 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                 Audience = this.configuration["Jwt:Audience"],
                 IssuedAt = DateTime.Now,
                 Subject = identiy,
-                Expires = DateTime.Now.AddMinutes(20),
+                Expires = DateTime.Now.AddMinutes(15),
                 SigningCredentials = signingCredentials
             };
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
