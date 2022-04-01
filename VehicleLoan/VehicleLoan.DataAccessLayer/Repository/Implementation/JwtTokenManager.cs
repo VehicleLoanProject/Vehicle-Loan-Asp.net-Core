@@ -42,10 +42,5 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             string token = tokenHandler.WriteToken(securityToken);
             return token;
         }
-
-        string IJwtTokenManager.GenerateJwt(UserRegistrationModel user)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

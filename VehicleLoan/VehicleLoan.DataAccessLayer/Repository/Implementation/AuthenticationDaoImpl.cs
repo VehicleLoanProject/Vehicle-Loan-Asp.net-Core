@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,26 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
     {
         public bool AuthenticateUser(UserRegistrationModel userInfo)
         {
-            bool status;
-            using (var db = new VehicleloanContext())
+            try
             {
-                var allUsers = db.UserRegistration;
-                status = allUsers.Any(user => user.UserId == userInfo.UserId && user.Password == userInfo.Password && user.RoleId==userInfo.RoleId);
+                bool status;
+                using (var db = new VehicleloanContext())
+                {
+                    var allUsers = db.UserRegistration;
+                    status = allUsers.Any(user => user.UserId == userInfo.UserId && user.Password == userInfo.Password && user.RoleId == userInfo.RoleId);
+                }
+                return status;
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
             }
               
-            return status;
+            
         }
     }
 }
