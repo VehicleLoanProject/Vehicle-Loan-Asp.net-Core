@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using VehicleLoan.DataAccessLayer.Models;
-using VehicleLoanDataAccessLayer.Repository.Abstraction;
+using VehicleLoan.DataAccessLayer.Repository.Abstraction;
 
 namespace VehicleAPI.Controllers
 {

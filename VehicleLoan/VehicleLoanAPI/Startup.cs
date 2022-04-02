@@ -36,6 +36,7 @@ namespace VehicleLoanAPI
             services.AddSingleton<IApplicantDetailsDao, ApplicantDetailsDaoImpl>();
             services.AddSingleton<ILoanSchemeDao, LoanSchemeDaoImpl>();
             services.AddSingleton<IUserRegistrationDao, UserRegistrationDaoImpl>();
+            services.AddSingleton<ILoanDetailsDao, LoanDetailsDaoImpl>();
             services.AddControllers();
             services.AddSingleton<IJwtTokenManager, JwtTokenManager>();
             //this will add services for authentication purpose in web API applucation

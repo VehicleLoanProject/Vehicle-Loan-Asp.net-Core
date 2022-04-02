@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using VehicleLoan.DataAccessLayer.Models;
 
-namespace VehicleLoanDataAccessLayer.Repository.Abstraction
+namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
 {
     public interface ILoanDetailsDao
     {

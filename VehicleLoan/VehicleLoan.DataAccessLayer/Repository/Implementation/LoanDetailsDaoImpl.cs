@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using VehicleLoan.DataAccessLayer.Models;
-using VehicleLoanDataAccessLayer.Repository.Abstraction;
+using VehicleLoan.DataAccessLayer.Repository.Abstraction;
 
-namespace VehicleLoanDataAccessLayer.Repository.Implimantation
+namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 {
     public class LoanDetailsDaoImpl : ILoanDetailsDao
     {
@@ -21,12 +21,11 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
                     DbSet<LoanDetails> loanDetailsList = db.LoanDetails;
                     loanDetailsobj = new LoanDetails()
                     {
-                        LoanAppId = loanDetails.LoanAppId,
                         LoanAmount = loanDetails.LoanAmount,
                         LoanTenure = loanDetails.LoanTenure,
-                        InterestRate = loanDetails.InterestRate
-
-
+                        InterestRate = loanDetails.InterestRate,
+                        CustomerId = loanDetails.CustomerId,
+                        StatusId = loanDetails.StatusId
                     };
                     loanDetailsList.Add(loanDetailsobj);
                     int rowAffected = db.SaveChanges();
@@ -81,10 +80,11 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
                     loanDetailsList = allLoanDetails.Select(
                         set => new LoanDetailsModel
                         {
-                            LoanAppId = set.LoanAppId,
                             LoanAmount = set.LoanAmount,
                             LoanTenure = set.LoanTenure,
-                            InterestRate = set.InterestRate
+                            InterestRate = set.InterestRate,
+                            CustomerId = set.CustomerId,
+                            StatusId = set.StatusId
 
                         }
                     ).ToList<LoanDetailsModel>();
@@ -98,6 +98,7 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
             }
 
         }
+        //For new application based on application status id.
         public List<LoanDetailsModel> GetAllLoanDetailsOfNew()
         {
             try
@@ -115,7 +116,8 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
                             LoanAmount = set.LoanAmount,
                             LoanTenure = set.LoanTenure,
                             InterestRate = set.InterestRate,
-                            CustomerId = set.CustomerId
+                            CustomerId = set.CustomerId,
+                            StatusId = set.StatusId
 
                         }).ToList<LoanDetailsModel>();
 
