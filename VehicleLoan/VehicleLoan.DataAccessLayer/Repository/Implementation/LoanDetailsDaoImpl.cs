@@ -98,5 +98,38 @@ namespace VehicleLoanDataAccessLayer.Repository.Implimantation
             }
 
         }
+        public List<LoanDetailsModel> GetAllLoanDetailsOfNew()
+        {
+            try
+            {
+                List<LoanDetailsModel> record = null;
+                using (var db = new VehicleloanContext())
+                {
+                    DbSet<LoanDetails> allLoanDetails = db.LoanDetails;
+
+                    IQueryable<LoanDetails> approvedRecords = allLoanDetails.Where(a => a.StatusId == 1);
+
+                    record = approvedRecords.Select(
+                        set => new LoanDetailsModel
+                        {
+                            LoanAmount = set.LoanAmount,
+                            LoanTenure = set.LoanTenure,
+                            InterestRate = set.InterestRate,
+                            CustomerId = set.CustomerId
+
+                        }).ToList<LoanDetailsModel>();
+
+                }
+                return record;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

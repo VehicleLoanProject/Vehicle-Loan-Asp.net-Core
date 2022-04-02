@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using VehicleLoan.BusinessModels;
 using VehicleLoan.DataAccessLayer.Models;
+using VehicleLoanDataAccessLayer.Repository.Implimantation;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 {
@@ -20,55 +21,45 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 
                 using (var db = new VehicleloanContext())
                 {
-                    //from loan details,status == approved.
-                    DbSet<LoanDetails> allLoanDetails = db.LoanDetails;
+                    LoanDetailsDaoImpl loan = new LoanDetailsDaoImpl();
+                    ApplicantDetailsDaoImpl applicant = new ApplicantDetailsDaoImpl();
+                    VehicleDaoImpl vehicle = new VehicleDaoImpl();
 
-                    IQueryable<LoanDetails> approvedRecords = allLoanDetails.Where(a => a.StatusId == 1);
+                    
 
-                    DbSet<Vehicle> vehicleRecords = db.Vehicle;
-                    //DbSet<IdentityDocuments> identityRecords = db.IdentityDocuments;
-                    DbSet<ApplicantDetails> applicantEntity = db.ApplicantDetails;
-
-                    /* IEnumerable<JoinTablesModel> querTwo = (from loanItem in approvedRecords
-                                                              join applicant in applicantEntity on loanItem.CustomerId equals applicant.CustomerId
-                                                              join vehicle in vehicleRecords on loanItem.CustomerId equals vehicle.CustomerId
-                                                            //join identityDocument in identityRecords on loanItem.CustomerId equals identityDocument.CustomerId
-
-                    */
-
-
-
-                    applicationList = (from loanItem in approvedRecords
-                                       join applicant in applicantEntity on loanItem.CustomerId equals applicant.CustomerId
-                                       join vehicle in vehicleRecords on applicant.CustomerId equals vehicle.CustomerId
-                                       //join identityDocument in identityRecords on loanItem.CustomerId equals identityDocument.CustomerId
+                    applicationList = (from l in loan.GetAllLoanDetailsOfNew()
+                                       join a in applicant.FetchApplicantDetails() on l.CustomerId equals a.CustomerId
+                                       join v in vehicle.GetAllVehicleDetails() on l.CustomerId equals v.CustomerId
                                        select new JoinTablesModel
                                        {
-                                           CustomerId = loanItem.CustomerId,
-                                           AppliedOn = applicant.AppliedOn,
-                                           FirstName = applicant.FirstName,
-                                           MiddleName = applicant.MiddleName,
-                                           LastName = applicant.LastName,
-                                           Age = applicant.Age,
-                                           Gender = applicant.Gender,
-                                           ContactNo = applicant.ContactNo,
-                                           EmailId = applicant.EmailId,
-                                           Address = applicant.Address,
-                                           State = applicant.State,
-                                           City = applicant.City,
-                                           Pincode = applicant.Pincode,
-                                           TypeOfEmployement = applicant.TypeOfEmployement,
-                                           YearlySalary = applicant.YearlySalary,
-                                           ExistingEmi = applicant.ExistingEmi,
+                                           CustomerId = l.CustomerId,
+                                           AppliedOn = a.AppliedOn,
+                                           FirstName = a.FirstName,
+                                           MiddleName = a.MiddleName,
+                                           LastName = a.LastName,
+                                           Age = a.Age,
+                                           Gender = a.Gender,
+                                           ContactNo = a.ContactNo,
+                                           EmailId = a.EmailId,
+                                           Address = a.Address,
+                                           State = a.State,
+                                           City = a.City,
+                                           Pincode = a.Pincode,
+                                           TypeOfEmployement = a.TypeOfEmployement,
+                                           YearlySalary = a.YearlySalary,
+                                           ExistingEmi = a.ExistingEmi,
 
-                                           LoanAmount = loanItem.LoanAmount,
-                                           LoanTenure = loanItem.LoanTenure,
-                                           InterestRate = loanItem.InterestRate,
+                                           LoanAmount = l.LoanAmount,
+                                           LoanTenure = l.LoanTenure,
+                                           InterestRate = l.InterestRate,
 
-                                           CarMake = vehicle.CarMake,
-                                           CarModel = vehicle.CarModel,
-                                           ExshowroomPrice = vehicle.ExshowroomPrice,
-                                           OnroadPrice = vehicle.OnroadPrice
+                                           CarMake = v.CarMake,
+                                           CarModel = v.CarModel,
+                                           ExshowroomPrice = v.ExshowroomPrice,
+                                           OnroadPrice = v.OnroadPrice
+
+
+
                                        }).ToList<JoinTablesModel>();
 
 
@@ -81,7 +72,6 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             {
                 throw ex;
             }
-
         }
 
     }
