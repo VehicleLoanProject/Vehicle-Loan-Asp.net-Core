@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VehicleLoan.DataAccessLayer.Models
 {
-    public partial class IdentityDocuments
+    public class IdentityDocuments 
     {
-        public int IdentityId { get; set; }
-        public byte[] Adharcard { get; set; }
-        public byte[] Pancard { get; set; }
-        public byte[] Photo { get; set; }
-        public byte[] Salaryslip { get; set; }
-        public int? CustomerId { get; set; }
+        [Key]
+        [Column(TypeName = "bigint")]
+        public long identityId { get; set; }
+        [Column(TypeName = "varchar(max)")]
+        public string imagepath { get; set; }
+        [Column(TypeName = "dateTime")]
+        public DateTime InsertedOn { get; set; }
 
+        public int? CustomerId { get; set; }
         public virtual ApplicantDetails Customer { get; set; }
+
+
     }
 }
