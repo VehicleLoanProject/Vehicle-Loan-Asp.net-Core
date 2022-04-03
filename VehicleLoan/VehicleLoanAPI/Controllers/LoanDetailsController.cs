@@ -69,5 +69,25 @@ namespace VehicleAPI.Controllers
                 return BadRequest(ex.Message) ;
             }
         }
+        [HttpPut]
+        public IActionResult UpdateLoanStatus([FromBody] LoanDetailsModel loanDetailsModel)
+        {
+            try
+            {
+                int result = this._loanDetailsDao.UpdateLoanStatus(loanDetailsModel);
+                return this.CreatedAtAction("UpdateLoanStatus",
+                    new
+                    {
+                        status = 201,
+                        response = result,
+                        data = loanDetailsModel
+                    }
+                    );
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

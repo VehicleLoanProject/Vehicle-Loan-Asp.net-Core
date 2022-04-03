@@ -9,6 +9,8 @@ namespace VehicleLoan.DataAccessLayer.Models
         public int LoanAppId { get; set; }
         public decimal LoanAmount { get; set; }
         public int LoanTenure { get; set; }
+        public string LoanSchemeName { get; set; }
+
         public int InterestRate { get; set; }
         public int CustomerId { get; set; }
         public int StatusId { get; set; }

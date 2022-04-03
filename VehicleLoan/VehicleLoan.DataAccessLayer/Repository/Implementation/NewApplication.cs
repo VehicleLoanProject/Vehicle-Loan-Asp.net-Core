@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using VehicleLoan.BusinessModels;
 using VehicleLoan.DataAccessLayer.Models;
-using VehicleLoanDataAccessLayer.Repository.Implimantation;
 
 namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 {

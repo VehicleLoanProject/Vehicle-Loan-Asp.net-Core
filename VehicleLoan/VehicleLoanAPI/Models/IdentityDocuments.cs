@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace VehicleLoan.DataAccessLayer.Models
+namespace VehicleLoanAPI.Models
 {
     public partial class IdentityDocuments
     {

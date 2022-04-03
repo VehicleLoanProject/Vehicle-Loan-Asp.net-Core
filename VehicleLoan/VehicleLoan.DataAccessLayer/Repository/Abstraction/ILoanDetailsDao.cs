@@ -12,6 +12,9 @@ namespace VehicleLoan.DataAccessLayer.Repository.Abstraction
         List<LoanDetailsModel> GetAllLoanDetails(); 
         
         public int DeleteLoanRecord(int id);
+        List<LoanDetailsModel> GetAllLoanDetailsOfNew();
+        int UpdateLoanStatus(LoanDetailsModel loanDetailsModel);
+
     }
 }
  

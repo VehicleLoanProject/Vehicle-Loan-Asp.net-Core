@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace VehicleLoan.DataAccessLayer.Models
+namespace VehicleLoanAPI.Models
 {
     public partial class VehicleloanContext : DbContext
     {
@@ -29,7 +29,7 @@ namespace VehicleLoan.DataAccessLayer.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server= LAPTOP-CTHV3RB5;Database=Vehicleloan;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server= DESKTOP-1KHLIRA;Database=Vehicleloan;user id= sa;password = V2022#asheek;");
             }
         }
 

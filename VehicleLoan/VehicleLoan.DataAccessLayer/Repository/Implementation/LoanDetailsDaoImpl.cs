@@ -23,6 +23,7 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                     {
                         LoanAmount = loanDetails.LoanAmount,
                         LoanTenure = loanDetails.LoanTenure,
+                        LoanSchemeName = loanDetails.LoanSchemeName,
                         InterestRate = loanDetails.InterestRate,
                         CustomerId = loanDetails.CustomerId,
                         StatusId = loanDetails.StatusId
@@ -82,9 +83,10 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                         {
                             LoanAmount = set.LoanAmount,
                             LoanTenure = set.LoanTenure,
+                            LoanSchemeName = set.LoanSchemeName,
                             InterestRate = set.InterestRate,
-                            CustomerId = set.CustomerId,
-                            StatusId = set.StatusId
+                            CustomerId = (int)set.CustomerId,
+                            StatusId = (int)set.StatusId
 
                         }
                     ).ToList<LoanDetailsModel>();
@@ -115,9 +117,10 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                         {
                             LoanAmount = set.LoanAmount,
                             LoanTenure = set.LoanTenure,
+                            LoanSchemeName = set.LoanSchemeName,
                             InterestRate = set.InterestRate,
-                            CustomerId = set.CustomerId,
-                            StatusId = set.StatusId
+                            CustomerId = (int)set.CustomerId,
+                            StatusId = (int)set.StatusId
 
                         }).ToList<LoanDetailsModel>();
 
@@ -133,5 +136,31 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                 throw ex;
             }
         }
+        public int UpdateLoanStatus(LoanDetailsModel loanDetailsModel)
+        {
+            int rowsAffected = 0;
+            try
+            {
+                using (var db = new VehicleloanContext())
+                {
+                    DbSet<LoanDetails> allLoanDetails = db.LoanDetails;
+
+                    LoanDetails approvedRecords = allLoanDetails.Where(a => a.CustomerId == loanDetailsModel.CustomerId).First();
+
+                    approvedRecords.StatusId = loanDetailsModel.StatusId;
+                    rowsAffected = db.SaveChanges();
+                }
+                return rowsAffected;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
