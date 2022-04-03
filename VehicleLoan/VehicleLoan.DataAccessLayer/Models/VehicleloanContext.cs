@@ -111,29 +111,19 @@ namespace VehicleLoan.DataAccessLayer.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<IdentityDocuments>(entity =>
+             modelBuilder.Entity<IdentityDocuments>(entity =>
             {
-                entity.HasKey(e => e.IdentityId)
+                entity.HasKey(e => e.identityId)
                     .HasName("pk_identity_documents");
 
-                entity.Property(e => e.Adharcard)
+                entity.Property(e => e.imagepath)
                     .IsRequired()
-                    .HasMaxLength(1)
+                    .HasColumnType("varchar(max)")
                     .IsFixedLength();
 
-                entity.Property(e => e.Pancard)
+                entity.Property(e => e.InsertedOn)
                     .IsRequired()
-                    .HasMaxLength(1)
-                    .IsFixedLength();
-
-                entity.Property(e => e.Photo)
-                    .IsRequired()
-                    .HasMaxLength(1)
-                    .IsFixedLength();
-
-                entity.Property(e => e.Salaryslip)
-                    .IsRequired()
-                    .HasMaxLength(1)
+                    .HasColumnType("datetime")
                     .IsFixedLength();
 
                 entity.HasOne(d => d.Customer)
