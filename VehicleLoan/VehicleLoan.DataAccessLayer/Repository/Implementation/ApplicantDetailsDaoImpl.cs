@@ -11,11 +11,13 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
 {
     public class ApplicantDetailsDaoImpl : IApplicantDetailsDao
     {
-        public bool AddApplicantDetails(ApplicantDetailsModel applicantDetailsModel)
+        public int AddApplicantDetails(ApplicantDetailsModel applicantDetailsModel)
         {
+            int custId = 0;
+            int result = 0;
+
             try
             {
-                int result = 0;
                 using (var db = new VehicleloanContext())
                 {
                     DbSet<ApplicantDetails> newApplicantDetails = db.ApplicantDetails;
@@ -41,8 +43,11 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                     };
                     newApplicantDetails.Add(applicantDetails);
                     result = db.SaveChanges();
+
+                    ApplicantDetails lastAddedRecord = db.ApplicantDetails.Where(a => a.UserId == applicantDetailsModel.UserId).First();
+                    custId = lastAddedRecord.CustomerId;
                 }
-                return true;
+                return custId;
             }
             catch (Exception ex)
             {

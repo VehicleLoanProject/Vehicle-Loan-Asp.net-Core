@@ -29,13 +29,13 @@ namespace VehicleLoanAPI.Controllers
             try
             {
 
-                var result = _applicantDetailsDao.AddApplicantDetails(applicantDetailsModel);
+                int customerId = _applicantDetailsDao.AddApplicantDetails(applicantDetailsModel);
                 return this.CreatedAtAction(
                 "AddApplicantDetails", new
                 {
                     Status = 201,
-                    Response = result,
-                    Data = applicantDetailsModel.CustomerId
+                    Response = true,
+                    Data = customerId
                 }
                 );
             }
