@@ -20,7 +20,6 @@ namespace VehicleLoanAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/Scheme)")]
 
         public IActionResult GetLoanSchemes()
         {
