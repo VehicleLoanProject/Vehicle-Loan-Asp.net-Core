@@ -64,13 +64,14 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
                                 (LoanScheme l) =>
                                      new LoanSchemeModel
                                      {
-                                         SchemeId =l.SchemeId,
+                                     
                                          SchemeName = l.SchemeName,
                                          MaxLoanAmount = l.MaxLoanAmount,
                                          InterestRate = l.InterestRate,
                                          Emi = l.Emi,
                                          ProcessingFee = l.ProcessingFee,
                                          AccountType = l.AccountType,
+                                         SchemeDescription = l.SchemeDescription,
                                          CustomerId = l.CustomerId
                                      }
                                       )
