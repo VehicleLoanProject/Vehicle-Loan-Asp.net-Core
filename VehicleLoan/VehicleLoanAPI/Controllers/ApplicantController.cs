@@ -92,9 +92,9 @@ namespace VehicleLoanAPI.Controllers
             try
             {
                 NewApplication application = new NewApplication();
-                application.FetchNewApplication();
+               
 
-                return this.Ok(application);
+                return this.Ok(application.FetchNewApplication());
             }
             catch (Exception ex)
             {
