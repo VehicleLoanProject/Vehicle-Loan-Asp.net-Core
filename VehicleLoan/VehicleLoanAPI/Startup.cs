@@ -39,8 +39,7 @@ namespace VehicleLoanAPI
             services.AddSingleton<ILoanDetailsDao, LoanDetailsDaoImpl>();
             services.AddControllers();
             services.AddSingleton<IJwtTokenManager, JwtTokenManager>();
-            //this will add services for authentication purpose in web API applucation
-            //we are configuring the authentication service to use Jwt authentication scheme
+            
             Action<AuthenticationOptions> action = (AuthenticationOptions options) =>
             {
                 options.DefaultAuthenticateScheme = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;

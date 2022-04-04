@@ -25,7 +25,7 @@ namespace VehicleLoan.DataAccessLayer.Repository.Implementation
             SigningCredentials signingCredentials = new SigningCredentials(tokenKey, SecurityAlgorithms.HmacSha256);
 
             Claim userNameBasedClaim = new Claim(ClaimTypes.Email, user.UserId);
-            // Claim roleBasedClaim = new Claim(ClaimTypes.Role, user.Role);   
+              
             Claim[] userClaims = new Claim[] { userNameBasedClaim };
             ClaimsIdentity identiy = new ClaimsIdentity(userClaims);
             SecurityTokenDescriptor tokeDescriptor = new SecurityTokenDescriptor
