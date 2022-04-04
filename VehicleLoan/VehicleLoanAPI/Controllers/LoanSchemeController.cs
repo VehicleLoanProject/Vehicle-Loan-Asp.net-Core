@@ -5,9 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using VehicleLoan.BusinessModels;
 using VehicleLoan.DataAccessLayer.Repository.Abstraction;
-using VehicleLoan.DataAccessLayer.Repository.Implementation;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace VehicleLoanAPI.Controllers
 {

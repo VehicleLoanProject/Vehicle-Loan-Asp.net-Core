@@ -43,7 +43,7 @@ namespace VehicleLoanAPI.Controllers
                             file.CopyTo(stream);
                         }
                         IdentityDocuments imageUpload = new IdentityDocuments();
-                        imageUpload.imagepath = path;
+                        imageUpload.Imagepath = path;
                         imageUpload.InsertedOn = DateTime.Now;
                         dbContext.IdentityDocuments.Add(imageUpload);
                         dbContext.SaveChanges();
